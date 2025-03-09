@@ -1,0 +1,36 @@
+Here are some common questions an examiner might ask during your viva for the weather app project, along with their answers:
+
+1. What is the main functionality of your weather app?
+Answer: My weather app allows users to search for a city's weather conditions using the WeatherAPI. It displays the temperature, humidity, wind speed, and weather description in real-time. Additionally, it maintains a list of recent searches.
+
+2. What technologies did you use to develop this project?
+Answer: I used HTML, CSS, and JavaScript for the frontend. The weather data is fetched from WeatherAPI using JavaScript's Fetch API.
+
+3. How does your app fetch real-time weather data?
+Answer: The app makes an API call to WeatherAPI using JavaScript's fetch() function. It sends a request with the city name and API key, receives a JSON response, and updates the UI accordingly.
+
+4. What is an API, and why did you use WeatherAPI?
+Answer: An API (Application Programming Interface) allows communication between different software. WeatherAPI provides real-time weather data, which I fetch and display dynamically in my app.
+
+5. How do you handle errors in your API requests?
+Answer: If a user enters an invalid city name or if there’s an issue with the API request, I use JavaScript’s .catch() method to handle errors and display an alert message.
+
+6. Can you explain how you update the weather icon dynamically?
+Answer: The app has a function updateWeatherIcon() that maps weather conditions (like "Sunny" or "Rain") to corresponding emoji icons. When weather data is received, this function updates the displayed icon accordingly.
+
+7. How does your app handle recent searches?
+Answer: When a user searches for a city, the city name is added to a list. The app checks for duplicates and limits the list to six cities to maintain efficiency.
+
+8. How does your app manage responsiveness?
+Answer: The app uses CSS Flexbox and percentage-based widths to ensure it adapts to different screen sizes. It also has a background image that scales with the viewport.
+
+9. What security concerns are there when using an API, and how do you handle them?
+Answer: API keys should be kept secure to prevent unauthorized use. In a production app, I would store the API key in an environment variable or use a backend proxy instead of exposing it in JavaScript.
+
+10. What improvements can be made in your project?
+Answer:
+
+Implement local storage to save recent searches even after a page refresh.
+Add geolocation support to detect the user's location automatically.
+Improve the UI with animated transitions for a better user experience.
+Use a backend (Node.js/PHP) to hide the API key and increase security.
